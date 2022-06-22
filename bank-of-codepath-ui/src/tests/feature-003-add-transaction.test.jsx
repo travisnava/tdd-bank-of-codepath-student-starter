@@ -147,13 +147,14 @@ export function testAddTransaction(App) {
       "handleOnFormFieldChange",
       "function"
     )
-
+      console.log(111111, "test")
     ctx.testInstances.propAssertions.AddTransactionForm.assertComponentExistsAndHasPropWithAttributeOfType({
       propName: "form",
       attributeName: "amount",
       attributeType: "number",
     })
     ctx.testInstances.propAssertions.AddTransactionForm.assertComponentExistsAndHasPropWithAttributeOfType({
+      
       propName: "form",
       attributeName: "description",
       attributeType: "string",
